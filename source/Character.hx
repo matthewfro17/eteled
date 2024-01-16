@@ -301,6 +301,20 @@ class Character extends FlxSprite
 				loadOffsetFile(curCharacter);
 
 				playAnim('idle');
+			case 'bananaled':
+				noteSkin = 'eteled';
+				iconColor = 'FFFFFFFF';
+				tex = Paths.getSparrowAtlas('Bananaled','shared',true);
+				frames = tex;
+				animation.addByPrefix('idle', 'idle', 24);
+				animation.addByPrefix('singUP', 'up', 24);
+				animation.addByPrefix('singRIGHT', 'right', 24);
+				animation.addByPrefix('singDOWN', 'down', 24);
+				animation.addByPrefix('singLEFT', 'left', 24);
+
+				loadOffsetFile(curCharacter);
+
+				playAnim('idle');
 			case 'eteled2':
 				noteSkin = 'eteled';
 				iconColor = 'FF181A22';
